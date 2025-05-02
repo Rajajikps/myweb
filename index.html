@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rajaji's personal website showcasing his startup, charity work, and passion for learning.">
+    <meta name="author" content="Rajaji">
+    <title>About Rajaji</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.0/scrollreveal.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Me Section -->
+        <section class="intro" id="about">
+            <div class="container">
+                <img src="profile.jpg" alt="Rajaji's Profile Picture" class="profile-pic">
+                <h1>Hi, I'm Rajaji</h1>
+                <p>
+                    I’m Rajaji, an entrepreneur with a passion for innovation and growth. I’m currently focused on building my own startup, which aims to make a positive impact in the industry. Alongside this, I’m exploring the world of option trading to sharpen my financial acumen. I also lead a charitable trust that ensures underprivileged communities receive meals every Sunday.
+                </p>
+            </div>
+        </section>
+
+        <!-- Roadmap Section -->
+        <section class="roadmap" id="roadmap">
+            <div class="container">
+                <h2>My Roadmap</h2>
+                <p>
+                    Here’s a look at my upcoming milestones and goals for the next few months and years.
+                </p>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Q3 2025</div>
+                        <div class="timeline-content">
+                            <h3>Launch My Startup</h3>
+                            <p>Successfully launch my startup and make the first impact in the industry.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2026</div>
+                        <div class="timeline-content">
+                            <h3>Scale Financial Education</h3>
+                            <p>Broaden my knowledge of trading and invest in sustainable businesses.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2027</div>
+                        <div class="timeline-content">
+                            <h3>Build a Big Company</h3>
+                            <p>Establish and grow my company into a major player in the industry.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2028</div>
+                        <div class="timeline-content">
+                            <h3>Expand My Charity Trust</h3>
+                            <p>Grow my charitable trust by reaching more communities and supporting more causes.</p>
+                        </div>
+                    </div>
+                    <!-- New Roadmap for Book -->
+                    <div class="timeline-item">
+                        <div class="timeline-date">2028</div>
+                        <div class="timeline-content">
+                            <h3>Write a Book on Helping 13-30 Age Group</h3>
+                            <p>Launch a book aimed at empowering and guiding people between the ages of 13 to 30, offering insights into personal growth, mental health, financial independence, and career development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p class="contact-para">
+                    I believe in connecting with like-minded individuals and organizations to collaborate, learn, and grow together.<br>
+                    Whether you have a question, need advice, or want to explore opportunities for partnership, feel free to reach out.<br>
+                    You can contact me via the following channels:
+                </p>
+                <p><strong>Phone:</strong> <a href="tel:+916385842829">+91 63858 42829</a></p>
+                <p><strong>Email:</strong> <a href="mailto:sdmrajaji@gmail.com">sdmrajaji@gmail.com</a></p>
+            </div>
+        </section>
+
+        <!-- Date Section -->
+        <section class="date-time">
+            <div class="container">
+                <h2>Current Date & Time</h2>
+                <p id="dateTimeDisplay"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rajaji. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Date and Time update
+        function updateDateTime() {
+            const now = new Date();
+            const dateString = now.toLocaleDateString();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById("dateTimeDisplay").textContent = `${dateString} ${timeString}`;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+
+        // ScrollReveal Animation for Sections
+        ScrollReveal().reveal('.intro', { delay: 300, duration: 800 });
+        ScrollReveal().reveal('.roadmap', { delay: 300, duration: 800 });
+        ScrollReveal().reveal('.contact', { delay: 300, duration: 800 });
+        ScrollReveal().reveal('.date-time', { delay: 300, duration: 800 });
+    </script>
+</body>
+
+</html>
